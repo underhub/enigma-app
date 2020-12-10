@@ -11,6 +11,14 @@
 		CEA94D4C2582649B002A79D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEA94D4B2582649B002A79D7 /* Assets.xcassets */; };
 		CEA94D5C258264FF002A79D7 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA94D5B258264FF002A79D7 /* App.swift */; };
 		CEA94D60258264FF002A79D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEA94D5F258264FF002A79D7 /* Assets.xcassets */; };
+		CEA94DA525826CA1002A79D7 /* Window.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA94DA425826CA1002A79D7 /* Window.swift */; };
+		CEA94DAD25826F30002A79D7 /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA94DAC25826F30002A79D7 /* Text.swift */; };
+		CEA94DB3258270CA002A79D7 /* Launch.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA94DB2258270CA002A79D7 /* Launch.swift */; };
+		CEA94DB925827189002A79D7 /* Control.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA94DB825827189002A79D7 /* Control.swift */; };
+		CEA94DBD2582719B002A79D7 /* Control.Title.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA94DBC2582719B002A79D7 /* Control.Title.swift */; };
+		CEA94DC3258273AF002A79D7 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA94DC2258273AF002A79D7 /* Game.swift */; };
+		CEA94DCA2582746B002A79D7 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEA94DC92582746B002A79D7 /* Media.xcassets */; };
+		CEA94DCD258274A6002A79D7 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEA94DC92582746B002A79D7 /* Media.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +31,13 @@
 		CEA94D5F258264FF002A79D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEA94D64258264FF002A79D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEA94D65258264FF002A79D7 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		CEA94DA425826CA1002A79D7 /* Window.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Window.swift; sourceTree = "<group>"; };
+		CEA94DAC25826F30002A79D7 /* Text.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Text.swift; sourceTree = "<group>"; };
+		CEA94DB2258270CA002A79D7 /* Launch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Launch.swift; sourceTree = "<group>"; };
+		CEA94DB825827189002A79D7 /* Control.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Control.swift; sourceTree = "<group>"; };
+		CEA94DBC2582719B002A79D7 /* Control.Title.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Control.Title.swift; sourceTree = "<group>"; };
+		CEA94DC2258273AF002A79D7 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		CEA94DC92582746B002A79D7 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +64,7 @@
 				CEA94D462582649B002A79D7 /* iOS */,
 				CEA94D5A258264FF002A79D7 /* macOS */,
 				CEA94D452582649B002A79D7 /* Products */,
+				CEA94DC825827443002A79D7 /* Shared */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,9 +93,23 @@
 				CEA94D65258264FF002A79D7 /* macOS.entitlements */,
 				CEA94D64258264FF002A79D7 /* Info.plist */,
 				CEA94D5B258264FF002A79D7 /* App.swift */,
+				CEA94DB825827189002A79D7 /* Control.swift */,
+				CEA94DBC2582719B002A79D7 /* Control.Title.swift */,
+				CEA94DC2258273AF002A79D7 /* Game.swift */,
+				CEA94DB2258270CA002A79D7 /* Launch.swift */,
+				CEA94DAC25826F30002A79D7 /* Text.swift */,
+				CEA94DA425826CA1002A79D7 /* Window.swift */,
 				CEA94D5F258264FF002A79D7 /* Assets.xcassets */,
 			);
 			path = macOS;
+			sourceTree = "<group>";
+		};
+		CEA94DC825827443002A79D7 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				CEA94DC92582746B002A79D7 /* Media.xcassets */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,6 +190,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEA94DCD258274A6002A79D7 /* Media.xcassets in Resources */,
 				CEA94D4C2582649B002A79D7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -168,6 +199,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEA94DCA2582746B002A79D7 /* Media.xcassets in Resources */,
 				CEA94D60258264FF002A79D7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -188,6 +220,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEA94D5C258264FF002A79D7 /* App.swift in Sources */,
+				CEA94DAD25826F30002A79D7 /* Text.swift in Sources */,
+				CEA94DC3258273AF002A79D7 /* Game.swift in Sources */,
+				CEA94DB925827189002A79D7 /* Control.swift in Sources */,
+				CEA94DBD2582719B002A79D7 /* Control.Title.swift in Sources */,
+				CEA94DB3258270CA002A79D7 /* Launch.swift in Sources */,
+				CEA94DA525826CA1002A79D7 /* Window.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

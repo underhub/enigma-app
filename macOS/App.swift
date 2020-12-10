@@ -9,6 +9,6 @@ import AppKit
     
     func applicationWillFinishLaunching(_: Notification) {
 //        mainMenu = Menu()
-        NSWindow().makeKeyAndOrderFront(nil)
+        Window().makeKeyAndOrderFront(nil)
     }
 }
